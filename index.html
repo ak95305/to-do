@@ -1,46 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>DOER'S LIST</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7ee9b00e85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>To-do List</title>
+</head>
 <body>
     <div class="main">
         <header>
-            <h1>DOER'S LIST</h1>
+            <h1>Doer's List</h1>
         </header>
-        <div class="app-container">
-            <div id="add-task">
-                <input type="text">
-                <button id="add-btn">+</button>
-            </div>
-            <div id="task-list">
-                <ul id="tasks">
-                    <li class="task">
-                        <input type="checkbox">
-                        Create Tasks 
-                        <button id="subadd-btn">+</button>
-                        <button id="subadd-btn">...</button>
-                    </li>
-                    <li class="task">
-                        <input type="checkbox">
-                        Add Discription 
-                        <button id="subadd-btn">+</button>
-                        <button id="subadd-btn">...</button>
-                    </li>
-                    <li class="task">
-                        <input type="checkbox">
-                        Add Sub-tasks
-                        <button id="subadd-btn">+</button>
-                        <button id="subadd-btn">...</button>
-                    </li>
-                    </ul>
-            </div>
-            <div id="clear">
-                <button id="clear-btn">CLEAR</button>
-            </div>
+        <div class="add-task">
+            <form>
+                <input type="text" id="task-name">
+                <button id="add-btn" type="button"><i class="fas fa-plus-circle"></i></button>
+            </form>
+        </div>
+        <div class="to-do-list">
+            <ul id="todolist"></ul>
         </div>
     </div>
     <script src="to-do.js"></script>
